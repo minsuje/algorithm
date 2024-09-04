@@ -3,15 +3,6 @@
 #include <stdlib.h>
 
 int solution(int angle) {
-    int answer = 0;
-    if(angle == 180) {
-        answer = 4;
-    }else if (angle > 90 && angle < 180){
-        answer = 3;
-    } else if (angle == 90){
-        answer = 2;
-    } else {
-        answer = 1;
-    }
-    return answer;
+    int ans = angle;
+    return ans<90?1:ans==90?2:ans<180?3:4;
 }
